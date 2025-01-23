@@ -3,7 +3,7 @@
 #include <stdbool.h>  
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
-#include "inc/ssd1306.h"
+#include "inc/ssd1306_font.h"
 
 // Definições do display OLED
 #define SSD1306_BUFFER_LENGTH 1024

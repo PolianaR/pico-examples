@@ -1,3 +1,6 @@
+# Inicializa o SDK do Raspberry Pi Pico
+pico_sdk_init()
+
 add_executable(blink_custom
         blink_custom.c
         ssd1306.c 
@@ -13,6 +16,7 @@ target_link_libraries(blink_custom
         hardware_i2c     # Biblioteca para comunicação I2C
 
 )
+include(pico_sdk_import.cmake)
 
 # create map/bin/hex/uf2 file etc.
 pico_add_extra_outputs(blink_custom)
