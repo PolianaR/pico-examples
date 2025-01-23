@@ -1,5 +1,5 @@
 add_executable(blink_custom
-        blink_simple.c
+        blink_custom.c
         ssd1306.c 
 )
 
