@@ -14,7 +14,7 @@ pico_sdk_init()
 
 # Adiciona o executável
 add_executable(hello_world
-    hello_world.c
+    serial/hello_serial.c
 )
 
 # Alvo de biblioteca de SDK do Pico
