@@ -1,6 +1,7 @@
 add_executable(blink_custom
         blink_custom.c
         ssd1306.c 
+        ssd1306_i2c.c
 )
 
 # pull in common dependencies
