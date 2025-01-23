@@ -6,6 +6,12 @@ add_executable(blink_custom
         ssd1306.c 
         ssd1306_i2c.c
 )
+# Defina o caminho do SDK
+set(PICO_SDK_PATH "/mnt/c/Users/3p/Documents/ProjetoRasp/pico-sdk")
+
+# Incluir o arquivo pico_sdk_import.cmake para importar o SDK
+include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+
 # Define os diretórios de inclusão
 target_include_directories(blink_custom PRIVATE 
     ${CMAKE_CURRENT_LIST_DIR}/inc  # Inclui a pasta 'inc' para arquivos de cabeçalho
