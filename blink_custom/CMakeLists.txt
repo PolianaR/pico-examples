@@ -3,7 +3,10 @@ add_executable(blink_custom
         ssd1306.c 
         ssd1306_i2c.c
 )
-
+# Define os diretórios de inclusão
+target_include_directories(blink_custom PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}/inc  # Inclui a pasta 'inc' para arquivos de cabeçalho
+)
 # pull in common dependencies
 target_link_libraries(blink_custom 
         pico_stdlib
