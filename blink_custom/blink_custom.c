@@ -38,16 +38,3 @@ void pico_set_led(bool led_on) {
 #elif defined(CYW43_WL_GPIO_LED_PIN)
     // Ask the wifi "driver" to set the GPIO on or off
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, led_on);
-#endif
-}
-
-int main() {
-    int rc = pico_led_init();
-    hard_assert(rc == PICO_OK);
-    while (true) {
-        pico_set_led(true);
-        sleep_ms(LED_DELAY_MS);
-        pico_set_led(false);
-        sleep_ms(LED_DELAY_MS);
-    }
-}
