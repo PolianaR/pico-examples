@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdbool.h>   // Para o tipo bool
+#include <stdbool.h>
 #include <string.h>
+#include <stdint.h>  // Inclua esta biblioteca para definir uint8_t
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 #include "inc/ssd1306_font.h"
-#include <cstdint>
 
 // Definições do display OLED
 #define SSD1306_BUFFER_LENGTH 1024
