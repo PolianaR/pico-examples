@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 cmake_policy(SET CMP0057 NEW)
-
-# Defina o nome do projeto
-project(ProjetoRasp C CXX ASM)
+set(CMAKE_MAKE_PROGRAM /usr/bin/make)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
