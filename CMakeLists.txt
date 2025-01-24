@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.12)
 
-# Inclua o SDK do Pico (certifique-se de que o caminho está correto)
+# Defina o caminho para o SDK do Pico
 set(PICO_SDK_PATH "/mnt/c/Users/3p/Documents/ProjetoRasp/pico-sdk")
 include(${PICO_SDK_PATH}/pico_sdk_import.cmake)
 include(pico_extras_import_optional.cmake)
+
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
