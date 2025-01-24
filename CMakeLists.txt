@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
+project(ProjetoRasp C CXX ASM)
+
 # Defina o caminho para o SDK do Pico
 set(PICO_SDK_PATH "/mnt/c/Users/3p/Documents/ProjetoRasp/pico-sdk")
 include(${PICO_SDK_PATH}/pico_sdk_import.cmake)
@@ -80,5 +82,8 @@ add_subdirectory(watchdog)
 add_subdirectory(sha)
 add_subdirectory(freertos)
 
-# Adicione a nova pasta 'sinalpedestre_1306'
-add_subdirectory(i2c/sinalpedestre_1306)
+# Adicione a nova pasta 'ssd1306_i2c'
+add_subdirectory(i2c/ssd1306_i2c)
+
+# Remover a flag -rdynamic
+set(CMAKE_EXE_LINKER_FLAGS "")
