@@ -1,10 +1,23 @@
 cmake_minimum_required(VERSION 3.26)
 cmake_policy(SET CMP0057 NEW)
 
-
+# Defina o nome do projeto
+project(ProjetoRasp C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
+
+# Configurações específicas para ARM
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+
+set(CMAKE_C_COMPILER arm-none-eabi-gcc)
+set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
+set(CMAKE_ASM_COMPILER arm-none-eabi-as)
+
+set(CMAKE_C_FLAGS "-mcpu=cortex-m0plus -mthumb")
+set(CMAKE_CXX_FLAGS "-mcpu=cortex-m0plus -mthumb")
+set(CMAKE_EXE_LINKER_FLAGS "")
 
 # Importa o SDK do Pico
 include(pico_sdk_import.cmake)
