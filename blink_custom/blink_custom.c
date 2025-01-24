@@ -1,6 +1,6 @@
-#include <stdint.h>   // Para tipos de dados como uint8_t, uint16_t, etc.
+#include <stdio.h>
 #include <stdbool.h>   // Para o tipo bool
-#include <string.h>    // Para funções como memset
+#include <string.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 #include "inc/ssd1306_font.h"
