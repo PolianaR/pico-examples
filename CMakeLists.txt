@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.13)
-
 # Defina o nome do projeto
 project(hello_world C CXX ASM)
 
@@ -26,3 +24,6 @@ pico_add_extra_outputs(hello_world)
 # Copie arquivos adicionais
 pico_enable_stdio_uart(hello_world 1)
 pico_enable_stdio_usb(hello_world 0)
+
+# Adiciona a nova pasta sinalpedestre_1306
+add_subdirectory(sinalpedestre_1306)
