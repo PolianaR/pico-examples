@@ -12,6 +12,8 @@ if (TARGET hardware_i2c)
     add_subdirectory_exclude_platforms(pcf8523_i2c)
     add_subdirectory_exclude_platforms(ht16k33_i2c)
     add_subdirectory_exclude_platforms(slave_mem_i2c)
+    add_subdirectory_exclude_platforms(sinalpedestre_1306)
+
 else()
     message("Skipping I2C examples as hardware_i2c is unavailable on this platform")
 endif()
