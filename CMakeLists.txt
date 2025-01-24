@@ -1,3 +1,6 @@
+cmake_minimum_required(VERSION 3.28)
+cmake_policy(SET CMP0057 NEW)
+
 # Defina o nome do projeto
 project(ProjetoRasp C CXX ASM)
 
@@ -28,4 +31,3 @@ pico_enable_stdio_usb(ProjetoRasp 0)
 
 # Adiciona a nova pasta sinalpedestre_1306
 add_subdirectory(i2c/sinalpedestre_1306)
-
