@@ -1,3 +1,4 @@
+#include <cstdint>
 /**
  * Copyright (c) 2022 Raspberry Pi (Trading) Ltd.
  *
